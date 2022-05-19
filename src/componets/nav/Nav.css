@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+/*rules : font-family: 'Dancing Script', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* rules : font-family: 'Poppins', sans-serif;*/
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins'; 
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+   --negro-color:#191919;
+   --blanco-color:#ffffff;
+   --cafeoscuro-color:#572612;
+   --cafemasoscuro-color:#301309;
+   --amarillo-color: #F9D544; 
+}
+.menu li{
+
+    list-style: none;
+    display: none;
+}
+.menu a{
+    text-decoration: none;
+    color: #301309;
+}
+.menu li, select{
+    border: none;
+    font-size: 14px;
+}
+.menu li input{
+border-top: none; border-left: none; border-right: none;
+border-bottom: 1px solid var(--cafemasoscuro-color);
+width: 120px;
+
+}
+.menu li, input:focus{
+    border: none;
+}
+#chk-menu{
+    display: none;
+}
+#chk-menu:checked ~ .item{
+    display:flex;
+    justify-content:flex-start;
+}
+
+.btn-menu{
+    font-size: 1rem;
+    cursor: pointer;
+}
